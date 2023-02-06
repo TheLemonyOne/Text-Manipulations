@@ -1,0 +1,22 @@
+#Declaring variables and input
+string = input("Please enter a sentence: \n")
+string1 = input("Enter a letter to count: \n")
+i = string1
+number = 0
+
+#Returning what you input (helps me debug, but feel free to remove)
+print("You entered: " + string)
+print("Searching for: " + string1)
+
+#Counting each letter with iterations 
+for i in string:
+   if i == string1:
+      number += 1
+
+#Establishing the length of the initial sentence
+len = len(string)
+
+#Calculating percentage of sentence with single letter above
+calc = number/len*100
+print("The percentage of this sentence with letter: " + string1 + " is: ")
+print(int(calc))
