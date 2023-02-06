@@ -1,0 +1,8 @@
+inp = str.lower(input("Please enter a sentence: \n"))
+vowels = 'aeiouy'
+count = 0
+
+for s in inp:
+    if s in vowels:
+        count=count+1
+print(count)
