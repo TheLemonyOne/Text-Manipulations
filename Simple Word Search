@@ -1,0 +1,17 @@
+#Establishing variables and input from user
+text = str(input("Please enter some text: \n"))
+word = str(input("Please enter a word to search for within the sentence: \n"))
+
+#This is the beginning of the program
+print("You entered: " + text)
+print("Searching for: " + word)
+
+#Defining a program()
+def search(text, word):
+    if word in text:
+        return("Word found")
+    elif word not in text:
+        return("Word not found")
+  
+#This returns if the word was in the sentence or not
+print(search(text, word))
